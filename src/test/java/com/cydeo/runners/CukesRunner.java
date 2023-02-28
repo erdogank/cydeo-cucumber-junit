@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         dryRun = false,
-        tags = "@sampletable",
+        tags = "@smoke",
         publish = true     //when this is true, it will publish a report that will be valid for 24 hours
 
 
