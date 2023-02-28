@@ -1,3 +1,4 @@
+@smoke
 Feature: Wikipedia Search Functionality Title Verification
   user should see certain title and header when he/she searches a keyword on wikipedia
 
