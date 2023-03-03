@@ -1,7 +1,7 @@
 package com.cydeo.step_definitions;
 
 import com.cydeo.pages.WikipediaPages;
-import com.cydeo.utilities.Driver;
+import com.cydeo.utilities.Drivertemp;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,7 +12,7 @@ public class WikipediaVerification {
 
     @Given("User is on Wikipedia home page")
     public void user_is_on_wikipedia_home_page() {
-        Driver.getDriver().get("https://www.wikipedia.org/");
+        Drivertemp.getDriver().get("https://www.wikipedia.org/");
 
     }
 
@@ -30,7 +30,7 @@ public class WikipediaVerification {
 
     @Then("User sees {string} is in the wiki title")
     public void user_sees_is_in_the_wiki_title(String string) {
-        Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
+        Assert.assertTrue(Drivertemp.getDriver().getTitle().contains(string));
 
     }
 

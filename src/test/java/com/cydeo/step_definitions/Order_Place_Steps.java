@@ -5,7 +5,7 @@ import com.cydeo.pages.CydeoWebTable_Login;
 import com.cydeo.pages.CydeoWebTable_MakeAnOrder;
 import com.cydeo.pages.CydeoWebTable_Orders;
 import com.cydeo.utilities.ConfigurationReader;
-import com.cydeo.utilities.Driver;
+import com.cydeo.utilities.Drivertemp;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,7 +13,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Order_Place_Steps {
@@ -25,7 +24,7 @@ public class Order_Place_Steps {
 
     @Given("user is logged in to web table app with the user name and password")
     public void user_is_logged_in_to_web_table_app_with_the_user_name_and_password() {
-        Driver.getDriver().get("https://web-table-2.cydeo.com/login");
+        Drivertemp.getDriver().get("https://web-table-2.cydeo.com/login");
         cydeoWebTableLogin.nameInput.sendKeys(ConfigurationReader.getProperty("usr_name"));
         cydeoWebTableLogin.passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
         cydeoWebTableLogin.loginButton.click();

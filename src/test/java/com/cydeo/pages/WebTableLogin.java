@@ -1,6 +1,6 @@
 package com.cydeo.pages;
 
-import com.cydeo.utilities.Driver;
+import com.cydeo.utilities.Drivertemp;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -9,7 +9,7 @@ public class WebTableLogin {
 
     public WebTableLogin(){
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Drivertemp.getDriver(),this);
     }
 
     @FindBy(name = "username")

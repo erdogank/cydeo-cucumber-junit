@@ -6,7 +6,7 @@ In the class we will be able to pass pre- & post- conditions to
  each scenario and each step
  */
 
-import com.cydeo.utilities.Driver;
+import com.cydeo.utilities.Drivertemp;
 import io.cucumber.java.*;
 import org.openqa.selenium.*;
 
@@ -37,14 +37,14 @@ public class Hooks {
 
         if (scenario.isFailed()){
 
-            byte [] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+            byte [] screenshot = ((TakesScreenshot) Drivertemp.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", scenario.getName());
 
           }
 
 
         //BrowserUtils.sleep(5);
-        Driver.closeDriver();
+        Drivertemp.closeDriver();
 
         //System.out.println("====Closing browser using cucumber @After");
         //System.out.println("====Scenario ended/ Take screenshot if failed!");
