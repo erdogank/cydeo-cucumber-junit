@@ -1,7 +1,7 @@
 package com.cydeo.step_definitions;
 
 import com.cydeo.pages.CydeoDropdownPage;
-import com.cydeo.utilities.Drivertemp;
+import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -16,7 +16,7 @@ public class dropdownVerification {
 
     @Given("User is on the dropdowns page of practice tool")
     public void user_is_on_the_dropdowns_page_of_practice_tool() {
-        Drivertemp.getDriver().get("http://practice.cydeo.com/dropdown");
+        Driver.getDriver().get("http://practice.cydeo.com/dropdown");
     }
     @Then("User should be able to see below info in month dropdown")
     public void user_should_be_able_to_see_below_info_in_month_dropdown(List<String> months) {

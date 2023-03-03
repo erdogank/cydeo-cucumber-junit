@@ -1,7 +1,7 @@
 package com.cydeo.step_definitions;
 
 import com.cydeo.utilities.ConfigurationReader;
-import com.cydeo.utilities.Drivertemp;
+import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -14,7 +14,7 @@ public class GoogleStepDefinition {
 
         // Write code here that turns the phrase above into concrete actions
 
-        Drivertemp.getDriver().get("https://www.google.com");
+        Driver.getDriver().get("https://www.google.com");
 
     }
 
@@ -22,7 +22,7 @@ public class GoogleStepDefinition {
     public void user_should_see_title_is_google() {
         // Write code here that turns the phrase above into concrete actions
         String expectedTitle = "Google";
-        String actualTitle = Drivertemp.getDriver().getTitle();
+        String actualTitle = Driver.getDriver().getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);
 
         System.out.println(ConfigurationReader.getProperty("browser"));

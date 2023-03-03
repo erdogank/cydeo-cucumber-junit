@@ -1,7 +1,7 @@
 package com.cydeo.step_definitions;
 
 import com.cydeo.utilities.BrowserUtils;
-import com.cydeo.utilities.Drivertemp;
+import com.cydeo.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -15,7 +15,7 @@ public class WebTableLogin {
 
     @Given("User is on the login page of Web table app")
     public void user_is_on_the_login_page_of_web_table_app() {
-        Drivertemp.getDriver().get("https://web-table-2.cydeo.com/login");
+        Driver.getDriver().get("https://web-table-2.cydeo.com/login");
     }
     @When("User enters below credentials")
     public void user_enters_below_credentials(Map<String,String> data) {
@@ -31,7 +31,7 @@ public class WebTableLogin {
     @Then("User should see url contains {string}")
     public void user_should_see_url_contains(String string) {
 
-        Assert.assertTrue(Drivertemp.getDriver().getCurrentUrl().contains(string));
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(string));
 
     }
 }
