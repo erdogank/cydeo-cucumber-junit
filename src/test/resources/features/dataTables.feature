@@ -1,6 +1,6 @@
 Feature: Examples of cucumber data table implementation
 
-
+@datatable
   Scenario: list of fruits I like
     Then user should see fruits I like
 
