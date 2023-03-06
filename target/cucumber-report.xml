@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="94.826" tests="19" skipped="0" failures="0" errors="0">
+<testcase classname="Examples of cucumber data table implementation" name="list of fruits I like" time="0.039">
+<system-out><![CDATA[
+Then user should see fruits I like..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature of the library application" name="Login as librarian" time="0.031">
+<system-out><![CDATA[
+Given user am on the home page of the application...........................passed
+When user enter the librarian username......................................passed
+And user enter the librarian password.......................................passed
+Then user should see the dashboard..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="verification of new orders in the Cydeo Web Tables Program" name="Order Place Verification of Cydeo Web Tables Program" time="21.968">
+<system-out><![CDATA[
+Given user is logged in to web table app with the user name and password....passed
+When user enters Order page.................................................passed
+And user selects "MoneyCog" from Product dropdown menu......................passed
+And user enters "2" as quantity.............................................passed
+And user types "Muhtar Mahmoud" as Customer name............................passed
+And user enter "Third" to the Street field..................................passed
+And user enter "Arlington" as City name.....................................passed
+And user enters "VA" as State name..........................................passed
+And user enters "22202" as Zip code.........................................passed
+And user selects card type as "Visa"........................................passed
+And user enters Card number Card Number.....................................passed
+And user enters Expire Date "04/25".........................................passed
+And user clicks Process Order...............................................passed
+Then user should see new order in the table on View all orders page "Muhtar Mahmoud".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature of the web table application." name="Login function of WebTable app" time="22.036">
+<system-out><![CDATA[
+Given User is on the login page of Web table app............................passed
+When User enters below credentials..........................................passed
+Then User should see url contains "orders"..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature of the library application" name="Login as student" time="0.044">
+<system-out><![CDATA[
+Given user am on the home page of the application...........................passed
+When user enter the student username........................................passed
+And user enter the student password.........................................passed
+Then user should see the dashboard..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature of the library application" name="Login as admin" time="0.005">
+<system-out><![CDATA[
+Given user am on the home page of the application...........................passed
+When user enter the admin username..........................................passed
+And user enter the admin password...........................................passed
+Then user should see the dashboard..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User should be able to see all 12 months in months dropdown" name="User should be able to see all 12 months in months dropdown" time="22.756">
+<system-out><![CDATA[
+Given User is on the dropdowns page of practice tool........................passed
+Then User should be able to see below info in month dropdown................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google search functionality" name="Search page title verification" time="16.53">
+<system-out><![CDATA[
+Given user is on Google search page.........................................passed
+Then user should see title is Google........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Title verification of wikipedia" time="10.638">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Steve Jobs" in the wiki search box.........................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Steve Jobs" is in the wiki title............................passed
+]]></system-out>
+</testcase>
+<testcase classname="verification of new orders in the Cydeo Web Tables Program" name="Order Place Verification of Cydeo Web Tables Program - Example #1.1" time="8.185">
+<system-out><![CDATA[
+Given user is logged in to web table app with the user name and password....passed
+When user enters Order page.................................................passed
+And user selects "MoneyCog" from Product dropdown menu......................passed
+And user enters "2" as quantity.............................................passed
+And user types "Muhtar Mahmoud" as Customer name............................passed
+And user enter "Miller Street" to the Street field..........................passed
+And user enter "Arlington" as City name.....................................passed
+And user enters "VA" as State name..........................................passed
+And user enters "22202" as Zip code.........................................passed
+And user selects card type as "Visa"........................................passed
+And user enters Card number Card Number.....................................passed
+And user enters Expire Date "22/25".........................................passed
+And user clicks Process Order...............................................passed
+Then user should see new order in the table on View all orders page "Muhtar Mahmoud".passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Wikipedia Search Functionality Header Verification" time="12.967">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Steve Jobs" in the wiki search box.........................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Steve Jobs" is in the main header...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="verification of new orders in the Cydeo Web Tables Program" name="Order Place Verification of Cydeo Web Tables Program - Example #1.2" time="5.311">
+<system-out><![CDATA[
+Given user is logged in to web table app with the user name and password....passed
+When user enters Order page.................................................passed
+And user selects "Familybea" from Product dropdown menu.....................passed
+And user enters "3" as quantity.............................................passed
+And user types "Adam" as Customer name......................................passed
+And user enter "Miller Street" to the Street field..........................passed
+And user enter "Arlington" as City name.....................................passed
+And user enters "VA" as State name..........................................passed
+And user enters "22203" as Zip code.........................................passed
+And user selects card type as "Visa"........................................passed
+And user enters Card number Card Number.....................................passed
+And user enters Expire Date "17/28".........................................passed
+And user clicks Process Order...............................................passed
+Then user should see new order in the table on View all orders page "Adam"..passed
+]]></system-out>
+</testcase>
+<testcase classname="verification of new orders in the Cydeo Web Tables Program" name="Order Place Verification of Cydeo Web Tables Program - Example #1.3" time="7.952">
+<system-out><![CDATA[
+Given user is logged in to web table app with the user name and password....passed
+When user enters Order page.................................................passed
+And user selects "MoneyCog" from Product dropdown menu......................passed
+And user enters "3" as quantity.............................................passed
+And user types "Erdogan" as Customer name...................................passed
+And user enter "South Ball" to the Street field.............................passed
+And user enter "Arlington" as City name.....................................passed
+And user enters "VA" as State name..........................................passed
+And user enters "22202" as Zip code.........................................passed
+And user selects card type as "MasterCard"..................................passed
+And user enters Card number Card Number.....................................passed
+And user enters Expire Date "19/29".........................................passed
+And user clicks Process Order...............................................passed
+Then user should see new order in the table on View all orders page "Erdogan".passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Wikipedia Search Functionality Image Header Verification" time="9.927">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Steve Jobs" in the wiki search box.........................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Steve Jobs" is in the image header..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Wikipedia Search Functionality Title Verification - search values for this scenario are as follows: - Example #1.1" time="8.946">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Steve Jobs" in the wiki search box.........................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Steve Jobs" is in the wiki title............................passed
+Then User sees "Steve Jobs" is in the image header..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Wikipedia Search Functionality Title Verification - search values for this scenario are as follows: - Example #1.2" time="7.199">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Bob Marley" in the wiki search box.........................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Bob Marley" is in the wiki title............................passed
+Then User sees "Bob Marley" is in the image header..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Wikipedia Search Functionality Title Verification - search values for this scenario are as follows: - Example #1.3" time="12.714">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Marie Curie" in the wiki search box........................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Marie Curie" is in the wiki title...........................passed
+Then User sees "Marie Curie" is in the image header.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Wikipedia Search Functionality Title Verification - search values for this scenario are as follows: - Example #1.4" time="7.367">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Chuck Norris" in the wiki search box.......................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Chuck Norris" is in the wiki title..........................passed
+Then User sees "Chuck Norris" is in the image header........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Wikipedia Search Functionality Title Verification" name="Wikipedia Search Functionality Title Verification - search values for this scenario are as follows: - Example #1.5" time="7.724">
+<system-out><![CDATA[
+Given User is on Wikipedia home page........................................passed
+When User types "Lady Gaga" in the wiki search box..........................passed
+And User clicks wiki search button..........................................passed
+Then User sees "Lady Gaga" is in the wiki title.............................passed
+Then User sees "Lady Gaga" is in the image header...........................passed
+]]></system-out>
+</testcase>
+</testsuite>
